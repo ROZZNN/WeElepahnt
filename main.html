@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="viewport" />
+    <title>Our elephants</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.scss">
+    <script src="./script_menu.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navMenu">
+            <a href="#">MENU</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACTS</a>
+          </nav>
+    </header>
+
+    <main style="display: flex;" class="main-menu">
+        <div class='menu'>
+            <form id="menu-form">                
+                <div class="menu-item">
+                    <h3>Экспрессо</h3>
+                    <label for="ekspresso">Количество:</label>
+                    <input type="number" id="ekspresso" name="ekspresso" min="0" value="0">
+                    <button type="button" onclick="addToCart('ekspresso')">+</button>
+                </div>
+                
+                <div class="menu-item">
+                    <h3>Капучино</h3>
+                    <label for="Kaputhcino">Количество:</label>
+                    <input type="number" id="Kaputhcino" name="Kaputhcino" min="0" value="0">
+                    <button type="button" onclick="addToCart('Kaputhcino')">+</button>
+                </div>
+                
+                <div class="menu-item">
+                    <h3>Латте</h3>
+                    <label for="Latte">Количество:</label>
+                    <input type="number" id="Latte" name="Latte" min="0" value="0">
+                    <button type="button" onclick="addToCart('Latte')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Раф</h3>
+                    <label for="Raf">Количество:</label>
+                    <input type="number" id="Raf" name="Raf" min="0" value="0">
+                    <button type="button" onclick="addToCart('Raf')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Маккачино</h3>
+                    <label for="Makkathcino">Количество:</label>
+                    <input type="number" id="Makkathcino" name="Makkathcino" min="0" value="0">
+                    <button type="button" onclick="addToCart('Makkathcino')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Чай Matcha</h3>
+                    <label for="Cumpot">Количество:</label>
+                    <input type="number" id="Tea" name="Tea" min="0" value="0">
+                    <button type="button" onclick="addToCart('Tea')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Ice Латте</h3>
+                    <label for="ice Latte">Количество:</label>
+                    <input type="number" id="ice Latte" name="ice Latte" min="0" value="0">
+                    <button type="button" onclick="addToCart('ice Latte')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Круассан</h3>
+                    <label for="Cruassan">Количество:</label>
+                    <input type="number" id="Cruassan" name="Cruassan" min="0" value="0">
+                    <button type="button" onclick="addToCart('Cruassan')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Булочка с корицей</h3>
+                    <label for="bulochka">Количество:</label>
+                    <input type="number" id="bulochka" name="bulochka" min="0" value="0">
+                    <button type="button" onclick="addToCart('bulochka')">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Макаруны</h3>
+                    <label for="maka">Количество:</label>
+                    <input type="number" id="maka" name="maka" min="0" value="0">
+                    <button type="button" onclick="addToCart('maka')">+</button>
+                </div>
+                
+                <button class="glow-on-hover" class="all" type="submit"  onclick="ToCart()">Оформить заказ</button>
+            </form>
+        </div>  
+
+        <div id="map">
+            <h2>CONTACTS</h2>
+            <h3>Email: Ourelepahnt@yandex.ru</h3>
+            <h3>Number: +7 (900) 800 70-60</h3>
+            <h3></h3>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad251ced68ebc13e7454882067b33d01676a9456c32806921713a032f11f79da1&amp;width=700&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </main>
+
+    <main class="buy" style="display: none;">
+        <div class="basket">
+            <h2>shopping cart:</h2>
+            <div class="shoppingcart">
+                
+            </div>
+        </div>
+        <div class="pay">
+            <form id="payment-form">
+                <div class="form-group">
+                  <label for="card-number">Card Number</label>
+                  <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                  <label for="card-expiry">Expiry Date</label>
+                  <input type="text" id="card-expiry" name="card-expiry" required>
+                </div>
+                <div class="form-group">
+                  <label for="card-cvc">CVC</label>
+                  <input type="text" id="card-cvc" name="card-cvc" required>
+                </div>
+                <button type="submit">Pay</button>
+              </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Our elephants. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

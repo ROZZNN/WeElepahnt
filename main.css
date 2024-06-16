@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Retro Gaming;
+    src: url(./ofont.ru_Retro\ Gaming.ttf);
+}
+body{
+    background-color: lightgray;
+}
+div.menu {
+    border-color: none;
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: left;
+    width: 25%;
+    height: 120%;
+}
+.menu-item {
+    padding: 10px;
+    font-family: Retro Gaming;
+}
+img {
+    display:flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu-item {
+    background-color: grey;
+}
+.A {
+    padding: 2%;
+    display: flex;
+    font-family: "Retro Gaming";
+    justify-content: center;
+    font-size: 3vh;
+}
+#map {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 25vh;
+    width: 60%;
+    height: 60%;
+}
+main.main-menu{
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content:flex-start;
+
+    font-family: "Retro Gaming";
+    text-align: left;
+    vertical-align: middle;
+}
+button {
+    background-color: lightgray;
+    border-radius: 25%;
+    border-color: none;
+    border: none;
+    font-family: "Retro Gaming";
+    font-size: 1.2vh;
+}
+input {
+    background-color: lightgray;
+    width: 5%;
+    border-radius: 15%;
+}
+.all {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    height: 7vh;
+    border-radius: 5%;
+    margin-left: 10vh;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;;
+    font-size: 2.5vh;
+}
+
+.glow-on-hover {
+    margin-left: 15vh;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #2b2b2b, #5c5c5c, #8a8a8a, #9c9c9c, #dfdfdf, #b6b6b6, #bdbdbd, #ffffff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navMenu {
+    height: 5vh;
+    display: flex;
+    justify-content:space-around;
+
+    font-family: "Retro Gaming";
+    text-align: left;
+    vertical-align: middle;
+}
+.navMenu a {
+  margin-top: 1.5vh;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #ffffff;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: gray;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
