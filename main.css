@@ -219,3 +219,30 @@ input {
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
+.buy {
+    background-color: #5c5c5c;
+    font-family: "Retro Gaming";
+    color: #000000;
+    justify-content: space-around;
+}
+.item {
+    width: 50vh;
+    height: 15vh;
+    background-color:#2b2b2b;
+    color:#bdbdbd;
+    font-family: "Retro Gaming";
+    margin: 5%;
+    border-radius: 3%;
+}
+.pay-button {
+    width: 100px;
+    height: 25px;
+}
+#card-expiry, #card-cvc, #card-number {
+    width: 225px;
+    background-color: #8a8a8a;
+    border-radius: 3%;
+}
+#payment-form, .form-group {
+    justify-content: space-around;
+}

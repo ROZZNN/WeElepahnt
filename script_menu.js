@@ -23,7 +23,10 @@ function updateCart() {
 for (let item in cart) {
   let itemElement = document.createElement('div');
   itemElement.classList.add('cart-item');
-  itemElement.innerHTML = `<h3>${item}</h3><p>Количество: ${cart[item]}</p><button type="button" onclick="removeFromCart('${item}')">Удалить</button>`;
+  itemElement.innerHTML = `
+  <h3>${item}</h3>
+  <p>Количество: ${cart[item]}</p>
+  <button type="button" onclick="removeFromCart('${item}')">Удалить</button>`;
   cartElement.appendChild(itemElement);
 }
 }
